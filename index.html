@@ -8,6 +8,18 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feliz 1 Ano, meu amor!</title>
+    <script>
+    // Defina a senha que será utilizada para acesso
+    const senhaCorreta = "1ano  "; // Substitua pela senha combinada com sua namorada
+
+    // Solicita a senha assim que a página for carregada
+    const tentativa = prompt("Quanto tempo de namoro é a senha:");
+    if (tentativa !== senhaCorreta) {
+      // Se a senha estiver incorreta, substituir o conteúdo da página
+      document.body.innerHTML = "<h1>Nao erre de novo hem muié</h1><p>Quero Divorcio</p>";
+      throw new Error("Acesso negado");
+    }
+  </script>
   <style>
     /* Oculta o player de áudio */
     #background-music {
