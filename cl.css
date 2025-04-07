@@ -1,0 +1,64 @@
+#background-music{
+    display: none;
+}
+body {
+    background-image: url('background/fundo.jpeg'); /* Coloque aqui o caminho da sua imagem de fundo */
+    background-repeat: repeat;      /* Faz com que a imagem se repita para preencher a página */
+    background-position: top left;  /* Posiciona a repetição a partir do canto superior esquerdo */
+    /* Remova o background-size: cover; para usar o tamanho original da imagem e permitir a repetição */
+  }
+/* Define a fonte base para o site */
+body {
+    font-family: 'Roboto', sans-serif; /* Para textos gerais */
+    color: #333; /* Uma cor escura que contrasta bem com fundo branco */
+  }
+  
+  /* Títulos da carta – uma fonte mais sofisticada */
+  .carta h1 {
+    font-family: 'Playfair Display', serif;
+    color: crimson; /* ou outra cor que combine bem com seu fundo branco, como #C71585 */
+  }
+  
+  /* Se desejar alterar também os parágrafos ou outros elementos */
+  .carta p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .carta {
+    width: 60%;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border: 4px solid crimson; /* Borda sobressalente */
+  }
+
+  /* Define o container do slider com dimensões fixas */
+.slider {
+    width: 100%;
+    height: 500px; /* Defina a altura desejada */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Cada slide ocupa todo o container */
+  .slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slider .slide.active {
+    opacity: 1;
+  }
+  
+  /* Todas as imagens aqui preencherão o container e serão recortadas proporcionalmente */
+  .slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

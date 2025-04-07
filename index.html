@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" type="text/css" href="cl.css">
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz 1 Ano, meu amor!</title>
+  <style>
+    /* Oculta o player de áudio */
+    #background-music {
+      display: none;
+    }
+    
+    /* Estilização geral */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    /* Container principal: colunas laterais + carta */
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 20px;
+    }
+    
+    /* Colunas laterais: definindo que os itens serão empilhados verticalmente */
+    .side-column {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    /* Slider principal (lado) */
+    .slider {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .slider .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    .slider .slide.active {
+      opacity: 1;
+    }
+    
+    .slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Duplicate slider: escala menor e com espaçamento controlado */
+    .duplicate-slider {
+      height: 300px;       /* Altura menor para diferenciar */
+      margin-top: 20px;    /* Espaço entre o slider original e o duplicado */
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Formatação da carta central */
+    .carta {
+      width: 60%;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+    
+    .carta h1 {
+      color: crimson;
+    }
+    
+    .carta p {
+      line-height: 1.6;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Coluna Esquerda -->
+    <div class="side-column">
+      <!-- Slider original da esquerda -->
+      <div class="slider" id="slider-left">
+        <div class="slide"><img src="Imagens/0b6ed8cd-9106-4cd5-8487-d8d72c7da5e8.jpg" alt="Foto 1"></div>
+        <div class="slide"><img src="Imagens/4664cb07-0077-4947-b44f-320722212ef6.jpg" alt="Foto 2"></div>
+        <div class="slide"><img src="Imagens/616302b0-3df0-4f40-92a6-e54a2fc4dd45.jpg" alt="Foto 3"></div>
+      </div>
+      <!-- Slider duplicado na mesma coluna (abaixo do original) -->
+      <div class="slider duplicate-slider" id="slider-left-dup">
+        <div class="slide"><img src="Imagens/0b6ed8cd-9106-4cd5-8487-d8d72c7da5e8.jpg" alt="Foto 1"></div>
+        <div class="slide"><img src="Imagens/4664cb07-0077-4947-b44f-320722212ef6.jpg" alt="Foto 2"></div>
+        <div class="slide"><img src="Imagens/616302b0-3df0-4f40-92a6-e54a2fc4dd45.jpg" alt="Foto 3"></div>
+      </div>
+    </div>
+    
+    <!-- Carta Central -->
+    <div class="carta">
+      <h1>Feliz 1 Ano de Amor!</h1>
+      <p>Ei, Chuchu!,</p>
+      <p>Uau, já faz um ano desde que nos encontramos na internet. Quem diria que, entre tantos cliques e conversas, encontraríamos algo tão especial um no outro?</p>
+      <p>Desde o começo, seu carisma me conquistou. Seu jeito de me tratar, sempre com carinho e atenção, me faz sentir a pessoa mais especial do mundo. Você tem essa habilidade mágica de transformar momentos simples em memórias inesquecíveis.</p>
+      <p>Lembra daquele dia em que voltamos a nos falar depois de meses afastados? Foi tão emocionante! Você chorou tanto, e aquilo mexeu comigo de uma forma que nem sei explicar. Ali, percebi o quanto somos importantes um para o outro.</p>
+      <p>Ao longo deste ano, construímos uma história repleta de risos, confidências e sonhos compartilhados. Cada "bom dia" seu ilumina minhas manhãs, e cada "boa noite" aquece meu coração. Você é minha companheira, minha confidente, minha melhor amiga e o amor da minha vida.</p>
+      <p>Que este seja apenas o primeiro de muitos anos que celebraremos juntos. Que continuemos a escrever nossa história com páginas de amor, respeito, cumplicidade e, claro, muitas risadas.</p>
+      <p>Eu te amo demais</p>
+      <p>Com todo amor do mundo:</p>
+      <p><strong>Seu cheru</strong></p>
+    </div>
+    
+    <!-- Coluna Direita -->
+    <div class="side-column">
+      <!-- Slider original da direita -->
+      <div class="slider" id="slider-right">
+        <div class="slide"><img src="Imagens/IMG_1044.jpg" alt="Foto 4"></div>
+        <div class="slide"><img src="Imagens/IMG_1064.jpg" alt="Foto 5"></div>
+        <div class="slide"><img src="Imagens/IMG_0694.PNG" alt="Foto 6"></div>
+      </div>
+      <!-- Slider duplicado na mesma coluna (logo abaixo do original) -->
+      <div class="slider duplicate-slider" id="slider-right-dup">
+        <div class="slide"><img src="Imagens/IMG_1044.jpg" alt="Foto 4"></div>
+        <div class="slide"><img src="Imagens/IMG_1064.jpg" alt="Foto 5"></div>
+        <div class="slide"><img src="Imagens/IMG_0694.PNG" alt="Foto 6"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Áudio de fundo -->
+  <audio id="background-music" autoplay loop>
+    <source src="audio/Ruth B. - Dandelions _ Piano Cover with Strings (with Lyrics & PIANO SHEET).mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  
+  <!-- JavaScript para seleção aleatória dos slides -->
+  <script>
+    function startRandomSlider(sliderId, interval) {
+      const slider = document.getElementById(sliderId);
+      const slides = slider.getElementsByClassName('slide');
+      let currentIndex = -1;
+      
+      function showRandomSlide() {
+        let newIndex = Math.floor(Math.random() * slides.length);
+        if (newIndex === currentIndex) {
+          newIndex = (newIndex + 1) % slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove('active');
+        }
+        slides[newIndex].classList.add('active');
+        currentIndex = newIndex;
+      }
+      
+      // Exibe inicialmente um slide aleatório e atualiza a cada intervalo
+      showRandomSlide();
+      setInterval(showRandomSlide, interval);
+    }
+    
+    window.addEventListener('load', function() {
+      // Sliders originais nas colunas laterais
+      startRandomSlider('slider-left', 6000);
+      startRandomSlider('slider-right', 6000);
+      // Sliders duplicados nos mesmos locais com intervalos diferentes (se desejar)
+      startRandomSlider('slider-left-dup', 4000);
+      startRandomSlider('slider-right-dup', 8000);
+    });
+  </script>
+  <!-- Código para o efeito mágico com corações -->
+<style>
+    /* Estilo para os corações */
+    .heart {
+      position: absolute;
+      pointer-events: none; /* Faz com que os corações não atrapalhem a interação com outros elementos */
+      color: #ff69b4; /* Cor rosa, pode ser ajustada */
+      font-size: 25px; /* Tamanho do coração */
+      animation: moveHeart 1.5s ease-out forwards;
+      user-select: none;
+    }
+    
+    /* Animação: o coração sobe e aumenta de tamanho enquanto some */
+    @keyframes moveHeart {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-30px) scale(1.5);
+      }
+    }
+  </style>
+  
+  <script>
+    document.addEventListener("mousemove", function(e) {
+      // Cria um novo elemento para o coração
+      var heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.textContent = "♥";  // Pode ser trocado por outra forma ou imagem se preferir
+      
+      // Define a posição do coração baseada no local onde o mouse está
+      heart.style.left = e.pageX + "px";
+      heart.style.top = e.pageY + "px";
+      
+      // Adiciona o coração à página
+      document.body.appendChild(heart);
+      
+      // Remove o coração após 1.5 segundos (tempo da animação)
+      setTimeout(function() {
+        heart.remove();
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
